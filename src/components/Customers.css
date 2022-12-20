@@ -9,7 +9,11 @@ body.active-modal {
     font-size: 18px;
 }
 
-.overlay {
+.modal{
+    position: fixed;
+}
+
+.modal, .overlay {
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -40,4 +44,25 @@ body.active-modal {
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+}
+
+.admin {
+    list-style-type: none;
+    padding: 20px;
+    align-items: center;
+}
+.customers {
+    list-style-type: none;
+    padding: 20px;
+    align-items: center;
+}
+.deliveries {
+    list-style-type: none;
+    padding: 20px;
+    align-items: center;
+}
+.suppliers {
+    list-style-type: none;
+    padding: 20px;
+    align-items: center;
 }

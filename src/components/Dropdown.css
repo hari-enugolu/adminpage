@@ -1,9 +1,9 @@
 .dropdown{
     height: 1rem;
-    
+    list-style: none;
 }
 
-.dropdown-menu{
+/* .dropdown-menu{
     width: 15rem;
     text-align: center;
     color: black;
@@ -21,4 +21,4 @@ background: lightgray;
 
 .dropdown-list{
     list-style-type: none;
-}
+} */
