@@ -303,28 +303,35 @@ export default function Customers() {
   return (
     <div>
       <div>
-        <Box sx={{}}>
-          <Tabs value={value} aria-label="wrapped label tabs example">
-            <Tab value="one" />
-            <Link to="/admin">
-              <Tab className="admin" value="two" label="Admin"></Tab>
-            </Link>
-            <Link to="/customers">
-              <Tab className="customers" value="two" label="Customers"></Tab>
-            </Link>
-            <Link to="/deliveries">
-              <Tab className="deliveries" value="two" label="Deliveries"></Tab>
-            </Link>
-            <Link listStyleType="none" to="/suppliers">
-              <Tab className="suppliers" value="two" label="Suppliers"></Tab>
-            </Link>
-          </Tabs>
+        <Box className="header" sx={{}}>
+          <Link to="/admin" style={{ textDecoration: "none" }}>
+            <div className="header_option">
+              <span className="header_optionLineOne">Admin </span>
+            </div>
+          </Link>
+
+          <Link to="/customers" style={{ textDecoration: "none" }}>
+            <div className="header_option">
+              <span className="header_optionLineOne">Customers</span>
+            </div>
+          </Link>
+
+          <Link to="/deliveries" style={{ textDecoration: "none" }}>
+            <div className="header_option">
+              <span className="header_optionLineOne">Deliveries</span>
+            </div>
+          </Link>
+          <Link to="/suppliers" style={{ textDecoration: "none" }}>
+            <div className="header_option">
+              <span className="header_optionLineOne">Suppliers</span>
+            </div>
+          </Link>
         </Box>
       </div>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
-            <TableRow>
+            <TableRow className="tablestyle">
               <TableCell>Name</TableCell>
               <TableCell font-size="large" align="right">
                 Phone Number

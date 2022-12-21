@@ -47,10 +47,17 @@ import "./Dropdown.css";
 
 function Dropdown() {
   return (
-    <Link to="/customers">
-      <div className="dropdown">People</div>
-    </Link>
+    <div>
+      <Link to="/admin">
+        <div style={{ textDecoration: "none" }} className="dropdown">
+          People
+        </div>
+        <br />
+      </Link>
+      <Link to="/products">
+        <div>productspage</div>
+      </Link>
+    </div>
   );
 }
-
 export default Dropdown;

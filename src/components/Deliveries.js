@@ -306,24 +306,31 @@ export default function Customers() {
   return (
     <div>
       <div>
-        <Box sx={{ width: "100%" }}>
-          <Tabs value={value} aria-label="wrapped label tabs example">
-            <Tab value="one" />
-            <Link to="/admin">
-              <Tab value="two" label="Admin"></Tab>
-            </Link>
-            <Link to="/customers">
-              <Tab value="two" label="Customers"></Tab>
-            </Link>
-            <Link to="/deliveries">
-              <Tab value="two" label="Deliveries"></Tab>
-            </Link>
-            <Link to="/suppliers">
-              <Tab value="two" label="Suppliers"></Tab>
-            </Link>
-          </Tabs>
+        <Box className="header" sx={{}}>
+          <Link to="/admin" style={{ textDecoration: "none" }}>
+            <div className="header_option">
+              <span className="header_optionLineOne">Admin </span>
+            </div>
+          </Link>
+
+          <Link to="/customers" style={{ textDecoration: "none" }}>
+            <div className="header_option">
+              <span className="header_optionLineOne">Customers</span>
+            </div>
+          </Link>
+
+          <Link to="/deliveries" style={{ textDecoration: "none" }}>
+            <div className="header_option">
+              <span className="header_optionLineOne">Deliveries</span>
+            </div>
+          </Link>
+          <Link to="/suppliers" style={{ textDecoration: "none" }}>
+            <div className="header_option">
+              <span className="header_optionLineOne">Suppliers</span>
+            </div>
+          </Link>
         </Box>
-        {/* <Box sx={{ width: 500 }}>
+        {/* <Box sx={{ width: 500 }}>d
           <BottomNavigation
             showLabels
             value={value}
@@ -342,7 +349,7 @@ export default function Customers() {
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
-            <TableRow>
+            <TableRow className="tablestyle">
               <TableCell>Name</TableCell>
               <TableCell font-size="large" align="right">
                 Phone Number
