@@ -57,7 +57,10 @@ function Dropdown() {
       <Link to="/products">
         <div>productspage</div>
       </Link>
+      <br></br>
       <Link to="/productcart"><div>ProductsforCart</div></Link>
+      <br></br>
+      <Link to="/customerdtailspage"><div>ProductsforCart</div></Link>
     </div>
   );
 }

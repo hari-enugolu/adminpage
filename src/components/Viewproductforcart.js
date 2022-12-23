@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -12,6 +12,7 @@ import Viewproductforcart from "./Viewproductforcart";
 
 function Productspage() {
   const [data, setData] = useState([""]);
+
   const API = "http://localhost:9091/api/product/Id";
   const TOKEN =
     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDA3ZjRmM2VmOTRjMTAwMjQ4ODI1N2QiLCJpYXQiOjE2NzEzMDc3OTh9.byX--mb6q3JeQl3_hnS6_AWkxuVA-QAb6cr2Xcw6OOA";
@@ -33,6 +34,16 @@ function Productspage() {
         console.log(error);
       });
   };
+
+  //   const ProductId = (e) => {
+  // (e.target.vcalue===[
+  //     product.name,
+  //     product.grade,
+  //     product.category,
+  //     product.price,
+  //     product.description
+  // )]
+  //   }
   //   const navigate = useNavigate();
 
   // const viewProduct = () => {

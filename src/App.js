@@ -10,6 +10,7 @@ import View from "./components/View";
 import Productupdate from "./components/Productupdate";
 import Createorder from "./components/Createorder";
 import Viewproductforcart from "./components/Viewproductforcart";
+import Customerdtailspage from "./components/Customerdetailpage";
 
 function App() {
   return (
@@ -26,6 +27,11 @@ function App() {
           <Route path="/updateproduct" element={<Productupdate />}></Route>
           <Route path="/productcart" element={<Createorder />}></Route>
           <Route path="/cartpage" element={<Viewproductforcart />}></Route>
+          <Route path="/customersandsupplierspage" element={<Customerdtailspage />}></Route>
+          <Route
+            path="/customerdtailspage"
+            element={<Customerdtailspage />}
+          ></Route>
         </Routes>
       </BrowserRouter>
     </div>
